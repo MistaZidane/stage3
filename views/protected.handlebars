@@ -1,0 +1,93 @@
+<div class="jumbotron">
+    <h1 class="display-3">{{data.name}}</h1>
+    <p class="lead">Jumbo helper text</p>
+    <hr class="my-2">
+    <p>Your ID: {{data.name}}</p>
+     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#editForm" aria-expanded="false" aria-controls="editForm">
+         all Students
+        </button>
+    <div class="lead">
+ <div id="editForm" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div class="row">
+      {{#each students}}
+<div class="col-md-4">
+        <div class="card">
+          <div class="card-body">{{name}}</div>
+          <div class="card-body">{{age}}</div>
+          <div class="card-body">{{sex}}</div>
+          <div class="card-body">{{id}}</div>
+        </div>
+      </div>
+{{/each}}
+      
+    </div>
+    </div>
+        
+    </div>
+    <div class="card" style="width: 18rem;">
+  
+</div>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          View staff
+        </button>
+      </h2>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="row">
+      {{#each staff}}
+<div class="col-md-4">
+        <div class="card">
+          <div class="card-body">{{name}}</div>
+          <div class="card-body">{{age}}</div>
+          <div class="card-body">{{sex}}</div>
+          <div class="card-body">{{id}}</div>
+        </div>
+      </div>
+{{/each}}
+      
+    </div>
+    </div>
+  </div>
+  </div>
+
+<div class="accordion" id="test">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#coures" aria-expanded="false" aria-controls="collapseOne">
+          View staff
+        </button>
+      </h2>
+    </div>
+    <div id="coures" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="row">
+      {{#each course}}
+<div class="col-md-4">
+        <div class="card">
+          <div class="card-body">{{name}}</div>
+          <div class="card-body">{{title}}</div>
+          <div class="card-body">{{description}}</div>
+        </div>
+      </div>
+{{/each}}
+      
+    </div>
+    </div>
+  </div>
+  </div>
+  
+
+
+ 
+  </div>
+</div>
+
+ <div class="card">
+    <div class="card-body">
+      <p>{{log}}</p>
+    </div>
+  </div>
